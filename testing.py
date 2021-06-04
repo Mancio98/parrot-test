@@ -32,7 +32,7 @@ def run_command(command):
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, encoding="utf8")
 if __name__ == "__main__":
     IP_CLIENT = "192.168.1.14"
-    run_command("gnome-terminal -- ./olympe_codes/launch_swarm.sh")
+    run_command("gnome-terminal -- ./launch_swarm.sh")
     sleep(10)
     drone = olympe.Drone("10.202.0.1")
     #sendMessage = sendMessageUpdate((IP_CLIENT, 8777))
